@@ -15,7 +15,7 @@ public class SimpleCalculatorTask {
         System.out.print("Ввод оператора +, -, * или / : ");
         String operator = input.next();
 
-        int result = 0;
+        int result;
 
         switch (operator) {
             case "+":
@@ -29,7 +29,7 @@ public class SimpleCalculatorTask {
                 break;
             case "/":
                 if (num2 != 0) {
-                    result = num1 / num2;
+                    result =  num1 / num2;
                 } else {
                     System.out.println("На ноль не делим");
                     return;
